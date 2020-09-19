@@ -184,6 +184,44 @@
                 </div>
             </div>
         </section>
+        <button id='callRequest' data-modal-target='#modall'>
+            <img src="./assets/img/phone-symbol-2.png" alt="phone" id='phonee'>
+        </button>
+        <div class="modall" id='modall'>
+            <div class="modal-header">
+                <div class="modal-title">Заказать звонок</div>
+                <button data-close-button class='modal-close'>
+                    &times;     
+                </button>
+               
+            </div>
+            <div class="modal-body">
+                <form
+                action="https://formspree.io/mpzozzqb"
+                method="POST"
+              >
+                <label>
+                  Ваше Имя:
+                  <input class="form-control" type="text" name="name">
+                </label>
+                  <label>
+                  Ваш номер телефона:
+                  <input class="form-control" type="text" name="phone">
+                </label>
+                <label>
+                  Пожелания:
+                  <textarea class="form-control" name="message"></textarea>
+                </label>
+              
+                <!-- your other form fields go here -->
+              
+                <button type="submit" class="btn btn-success">Отправить</button>
+              </form>
+            </div>
+        </div>
+        <div class="" id="overlay">
+
+        </div>
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Ake Plast © 2020</div></div>

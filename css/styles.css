@@ -10168,3 +10168,73 @@ header.masthead h1 {
 #mainNav > div > img {
   height: 60px;
 }
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  opacity: 0;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modall {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 3px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 10;
+  width: 80%;
+}
+.modall .modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #000;
+}
+.modall .modal-header .modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modall .modal-header .modal-close {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modall .modal-header .modal-body {
+  padding: 10px 15px;
+}
+
+.modall.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#callRequest {
+  border-radius: 30px;
+  border: none;
+  background: none;
+  position: fixed;
+  top: 80%;
+  left: 80%;
+}
+#callRequest img {
+  width: 50px;
+  height: 50px;
+  background-color: cornsilk;
+  border-radius: 30px;
+}
