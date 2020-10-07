@@ -86,7 +86,7 @@ body {
   top: 35%;
   left: 10%;
   width: 100%;
-  height: 30%;
+  height: 20%;
   margin-top: -35px;
   margin-left: -35px;
   text-align: center;
@@ -101,6 +101,11 @@ body {
   100%{
     
     opacity: 1;
+  }
+}
+@media(min-width: 767px){
+  .preloader__image{
+    height: 40%;
   }
 }
 
